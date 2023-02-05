@@ -1,9 +1,11 @@
 package Tests;
 
 import WebPages.HomePage;
+import WebPages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -38,6 +40,23 @@ public class searchFieldTest {
         HomePage homePage = new HomePage(driver);
         homePage.navigateTo();
         homePage.clickLogin();
+
+        LoginPage loginPage = new LoginPage(driver);
+        Assert.assertTrue(loginPage.isUrlLoaded(), "The login URL is not correct");
+        String signInText = loginPage.getSingInElementText();
+        Assert.assertEquals(signInText, "Sign in" );
+        loginPage.fillUserName("Alex78");
+        loginPage.fillPassword("12345");
+        loginPage.clickSignIn();
+        Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
+
+        loginPage.populateSearchField("MARIELKATA");
+
+
+
+
+
+
     }
 
 
