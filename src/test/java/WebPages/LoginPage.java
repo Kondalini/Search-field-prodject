@@ -42,5 +42,13 @@ public void clickSignIn(){
       wait.until(ExpectedConditions.elementToBeClickable(signInButton));
       signInButton.click();
 }
-
+     public void populateSearchField(String text){
+         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+         WebElement searchField = driver.findElement(By.id("search-bar"));
+         populateSearchField("MARIELKATA");
+         WebElement userMarielkata = driver.findElement(By.xpath("//*[text() = 'MARIELKATA']"));
+         wait.until(ExpectedConditions.visibilityOf(userMarielkata));
+         userMarielkata.click();
+         wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
+     }
 }
