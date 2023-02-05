@@ -51,6 +51,9 @@ public class searchFieldTest {
         Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
 
         loginPage.populateSearchField("MARIELKATA");
+         String actualName = loginPage.getUsername();
+         Assert.assertEquals(actualName, "MARIELKATA", "The user name is incorrect");
+
 
 
 

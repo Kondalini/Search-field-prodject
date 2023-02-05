@@ -52,9 +52,16 @@ public class LoginPage {
         WebElement searchField = driver.findElement(By.id("search-bar"));
         searchField.sendKeys("MARIELKATA");
 
-        WebElement userMarielkata = driver.findElement(By.xpath("//*[text() = 'MARIELKATA']"));
+        //*[text() = 'MARIELKATA']
+        WebElement userMarielkata = driver.findElement(By.partialLinkText("MARIELKATA"));
          wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         userMarielkata.click();
+        wait = new WebDriverWait(driver,Duration.ofSeconds(20));
         wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
         }
+        public String getUsername (){
+        WebElement userName = driver.findElement(By.tagName("h2"));
+        return userName.getText();
+        }
+
     }
