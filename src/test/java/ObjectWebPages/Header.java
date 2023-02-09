@@ -22,16 +22,19 @@ public class Header {
         wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/login"));
         wait.until(ExpectedConditions.elementToBeClickable(loginLink));
     }
-    public void populateSearchField(String text) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+    public void populateSearchField(String text)  {
+
         WebElement searchField = driver.findElement(By.id("search-bar"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         searchField.sendKeys("MARIELKATA");
 
-        //*[text() = 'MARIELKATA']
-        WebElement userMarielkata = driver.findElement(By.partialLinkText("MARIELKATA"));
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebElement userMarielkata = driver.findElement(By.partialLinkText("MARIELKATA")); //*[text() = 'MARIELKATA']
+        wait.until(ExpectedConditions.elementToBeClickable(userMarielkata));
         userMarielkata.click();
-        wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
+
+
+
     }
 }
