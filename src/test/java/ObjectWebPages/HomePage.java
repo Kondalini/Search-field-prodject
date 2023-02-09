@@ -1,8 +1,6 @@
-package WebPages;
+package ObjectWebPages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,11 +23,6 @@ public class HomePage {
     public void navigateTo() {
         this.driver.get(PAGE_URL);
     }
-    public void clickLogin() {
-        WebElement loginLink = driver.findElement(By.id("nav-link-login"));
-        loginLink.click();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/login"));
-        wait.until(ExpectedConditions.elementToBeClickable(loginLink));
+
     }
-    }
+

@@ -1,7 +1,8 @@
 package Tests;
 
-import WebPages.HomePage;
-import WebPages.LoginPage;
+import ObjectWebPages.Header;
+import ObjectWebPages.HomePage;
+import ObjectWebPages.LoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,8 +14,8 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class searchFieldTest {
-    private WebDriver driver;
+public class ObjectsSearchFieldTest {
+    private  WebDriver driver;
 
     @BeforeSuite
     protected final void setupTestSuite() {
@@ -34,12 +35,24 @@ public class searchFieldTest {
         //        driver.manage().window().maximize();
         //    }
     }
+    @AfterMethod
+    protected final void tearDownTest() {
+        if (this.driver != null) {
+            this.driver.quit();
+        }
+    }
+        //void cleanUp() {
+        //driver.quit();
+        //}
 
     @Test
     public void searchFieldTest() {
         HomePage homePage = new HomePage(driver);
         homePage.navigateTo();
-        homePage.clickLogin();
+        Assert.assertTrue(homePage.isUrlLoaded(), "The Home page URL is not loaded");
+
+        Header header = new Header(driver);
+        header.clickLogin();
 
         LoginPage loginPage = new LoginPage(driver);
         Assert.assertTrue(loginPage.isUrlLoaded(), "The login URL is not correct");
@@ -50,28 +63,13 @@ public class searchFieldTest {
         loginPage.clickSignIn();
         Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
 
-        loginPage.populateSearchField("MARIELKATA");
+        header.populateSearchField("MARIELKATA");
          String actualName = loginPage.getUsername();
          Assert.assertEquals(actualName, "MARIELKATA", "The user name is incorrect");
 
-
-
-
-
-
-
     }
 
 
-
-    @AfterMethod
-    protected final void tearDownTest() {
-        if (this.driver != null) {
-            this.driver.quit();
-        }
-        //void cleanUp() {
-        //driver.quit();
-        //}
 
 
 
@@ -82,5 +80,4 @@ public class searchFieldTest {
 
 
     }
-}
 

@@ -1,4 +1,4 @@
-package WebPages;
+package ObjectWebPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +19,7 @@ public class LoginPage {
 
     public boolean isUrlLoaded() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.urlToBe(Page_URL));
+        return wait.until(ExpectedConditions.urlToBe(LoginPage.Page_URL));
     }
 
     public String getSingInElementText() {
@@ -29,7 +29,8 @@ public class LoginPage {
         return signInElement.getText();
     }
 
-    public void fillUserName(String username) {
+
+        public void fillUserName(String user) {
         WebElement userNameField = driver.findElement(By.id("defaultLoginFormUsername"));
         userNameField.sendKeys("Alex78");
     }
@@ -40,25 +41,14 @@ public class LoginPage {
 
     }
 
-    public void clickSignIn() {
+       public void clickSignIn() {
         WebElement signInButton = driver.findElement(By.id("sign-in-button"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));
         signInButton.click();
     }
 
-    public void populateSearchField(String text) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        WebElement searchField = driver.findElement(By.id("search-bar"));
-        searchField.sendKeys("MARIELKATA");
 
-        //*[text() = 'MARIELKATA']
-        WebElement userMarielkata = driver.findElement(By.partialLinkText("MARIELKATA"));
-         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        userMarielkata.click();
-        wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
-        }
         public String getUsername (){
         WebElement userName = driver.findElement(By.tagName("h2"));
         return userName.getText();

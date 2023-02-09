@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/searchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/searchFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebPages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/searchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/NewPostPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/ProfilePage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +57,8 @@
     "settings.editor.selected.configurable": "preferences.customizations"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.searchFieldTest">
-    <configuration name="searchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ObjectsSearchFieldTest">
+    <configuration name="ObjectsSearchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Search-field-prodject" />
       <extension name="coverage">
         <pattern>
@@ -62,7 +67,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.searchFieldTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ObjectsSearchFieldTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -70,7 +75,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="searchFieldTest.searchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ObjectsSearchFieldTest.searchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Search-field-prodject" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +84,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Tests" />
-      <option name="MAIN_CLASS_NAME" value="Tests.searchFieldTest" />
+      <option name="MAIN_CLASS_NAME" value="Tests.ObjectsSearchFieldTest" />
       <option name="METHOD_NAME" value="searchFieldTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -90,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.searchFieldTest" />
-        <item itemvalue="TestNG.searchFieldTest.searchFieldTest" />
+        <item itemvalue="TestNG.ObjectsSearchFieldTest" />
+        <item itemvalue="TestNG.ObjectsSearchFieldTest.searchFieldTest" />
         <item itemvalue="TestNG.searchFieldTest.searchFieldTest" />
       </list>
     </recent_temporary>
@@ -126,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675617779566</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="third commit update">
+      <created>1675618951744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675618951744</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +174,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="first commit update" />
     <MESSAGE value="second commit update" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit update" />
+    <MESSAGE value="third commit update" />
+    <option name="LAST_COMMIT_MESSAGE" value="third commit update" />
   </component>
 </project>
