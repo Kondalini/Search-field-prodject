@@ -3,6 +3,7 @@ package Tests;
 import ObjectWebPages.Header;
 import ObjectWebPages.HomePage;
 import ObjectWebPages.LoginPage;
+import ObjectWebPages.ProfilePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -64,7 +65,8 @@ public class ObjectsSearchFieldTest {
         Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
 
         header.populateSearchField("MARIELKATA");
-         String actualName = loginPage.getUsername();
+        ProfilePage profilePage = new ProfilePage(driver);
+         String actualName = profilePage.getUsername();
          Assert.assertEquals(actualName, "MARIELKATA", "The user name is incorrect");
 
     }

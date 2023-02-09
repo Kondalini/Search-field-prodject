@@ -49,9 +49,6 @@ public class LoginPage {
     }
 
 
-        public String getUsername (){
-        WebElement userName = driver.findElement(By.tagName("h2"));
-        return userName.getText();
-        }
+
 
     }

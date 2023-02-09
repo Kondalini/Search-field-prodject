@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/searchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/NewPostPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/ProfilePage.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/ProfilePge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675618951744</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="third commit update">
+      <created>1675931076109</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675931076109</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
