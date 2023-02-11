@@ -14,7 +14,6 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
-import java.util.concurrent.TimeoutException;
 
 public class ObjectsSearchFieldTest {
     private  WebDriver driver;
@@ -30,8 +29,8 @@ public class ObjectsSearchFieldTest {
     protected final void setUpTest() {
         this.driver = new ChromeDriver();
         this.driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         //void setup() {
         //        driver = new ChromeDriver();
         //        driver.manage().window().maximize();
@@ -48,7 +47,7 @@ public class ObjectsSearchFieldTest {
         //}
 
     @Test
-    public void searchFieldTest() throws  TimeoutException {
+    public void searchFieldTest() {
         HomePage homePage = new HomePage(driver);
         homePage.navigateTo();
         Assert.assertTrue(homePage.isUrlLoaded(), "The Home page URL is not loaded");
@@ -66,6 +65,7 @@ public class ObjectsSearchFieldTest {
         Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
 
         header.populateSearchField("MARIELKATA");
+        header.clickUser();
 
          ProfilePage profilePage = new ProfilePage(driver);
          String actualName = profilePage.getUsername();
