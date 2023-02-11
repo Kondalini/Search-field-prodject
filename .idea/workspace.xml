@@ -7,7 +7,6 @@
     <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectWebPages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/ProfilePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
     "settings.editor.selected.configurable": "preferences.customizations"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.ObjectsSearchFieldTest.searchFieldTest">
+  <component name="RunManager" selected="TestNG.ObjectsSearchFieldTest">
     <configuration name="ObjectsSearchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Search-field-prodject" />
       <extension name="coverage">
@@ -91,8 +90,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ObjectsSearchFieldTest.searchFieldTest" />
         <item itemvalue="TestNG.ObjectsSearchFieldTest" />
+        <item itemvalue="TestNG.ObjectsSearchFieldTest.searchFieldTest" />
         <item itemvalue="TestNG.searchFieldTest.searchFieldTest" />
       </list>
     </recent_temporary>
@@ -162,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676008881365</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="forth commit update">
+      <created>1676117581527</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676117581527</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,17 +215,7 @@
     <MESSAGE value="first commit update" />
     <MESSAGE value="second commit update" />
     <MESSAGE value="third commit update" />
-    <option name="LAST_COMMIT_MESSAGE" value="third commit update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="forth commit update" />
+    <option name="LAST_COMMIT_MESSAGE" value="forth commit update" />
   </component>
 </project>

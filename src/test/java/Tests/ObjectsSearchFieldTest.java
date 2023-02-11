@@ -72,16 +72,5 @@ public class ObjectsSearchFieldTest {
          Assert.assertEquals(actualName, "MARIELKATA", "The user name is incorrect");
 
     }
-
-
-
-
-
-
-
-
-
-
-
     }
 
