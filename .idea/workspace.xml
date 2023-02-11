@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" afterDir="false" />
+    <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/Header.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Factory/ProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/FactorySearchFieldtest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +45,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.customizations"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.ObjectsSearchFieldTest">
     <configuration name="ObjectsSearchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Search-field-prodject" />
@@ -92,7 +94,6 @@
       <list>
         <item itemvalue="TestNG.ObjectsSearchFieldTest" />
         <item itemvalue="TestNG.ObjectsSearchFieldTest.searchFieldTest" />
-        <item itemvalue="TestNG.searchFieldTest.searchFieldTest" />
       </list>
     </recent_temporary>
   </component>
