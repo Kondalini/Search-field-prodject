@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Factory/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Factory/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Factory/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676122303515</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="next commit">
+      <created>1676188037315</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676188037315</updated>
+    </task>
+    <task id="LOCAL-00012" summary="next commit">
+      <created>1676188329744</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676188329744</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
