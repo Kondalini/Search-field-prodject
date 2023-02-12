@@ -48,7 +48,7 @@ public class ObjectsSearchFieldTest {
             };
         }
     @Test(dataProvider = "getUsers")
-    public void searchFieldTest(String user, String password, String name) {
+    public void searchFieldTest(String user, String password, String name) throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         homePage.navigateTo();
         Assert.assertTrue(homePage.isUrlLoaded(), "The Home page URL is not loaded");

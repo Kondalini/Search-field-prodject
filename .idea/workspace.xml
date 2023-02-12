@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectWebPages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectWebPages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/ObjectsSearchFieldTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.FactorySearchFieldTest">
+  <component name="RunManager" selected="TestNG.ObjectsSearchFieldTest">
     <configuration name="FactorySearchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Search-field-prodject" />
       <extension name="coverage">
@@ -124,9 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ObjectsSearchFieldTest" />
         <item itemvalue="TestNG.FactorySearchFieldTest" />
         <item itemvalue="TestNG.FactorySearchFieldTest.searchFieldTest" />
-        <item itemvalue="TestNG.ObjectsSearchFieldTest" />
         <item itemvalue="TestNG.ObjectsSearchFieldTest.searchFieldTest" />
       </list>
     </recent_temporary>
@@ -266,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676231074359</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="next commit">
+      <created>1676231532511</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676231532511</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -31,19 +31,19 @@ public class Header {
         searchField.sendKeys(name);
     }
 
-    public void clickUser() {
+    public void clickUser()  {
         WebElement userName= driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
-        wait.until(ExpectedConditions.visibilityOf(userName));
         wait.ignoring(StaleElementReferenceException.class);
-
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("MARIELKATA")));
 
         userName.click();
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-         wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
+              wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+         wait.until(ExpectedConditions.urlContains("http://training.skillo-bg.com:4300/users"));
 
     }
     }
+
 
 
 
