@@ -1,9 +1,10 @@
 package Tests;
 
-import ObjectWebPages.Header;
-import ObjectWebPages.HomePage;
-import ObjectWebPages.LoginPage;
-import ObjectWebPages.ProfilePage;
+
+import Factory.Header;
+import Factory.HomePage;
+import Factory.LoginPage;
+import Factory.ProfilePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
