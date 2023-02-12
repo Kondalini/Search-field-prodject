@@ -8,10 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -45,9 +42,13 @@ public class ObjectsSearchFieldTest {
         //void cleanUp() {
         //driver.quit();
         //}
-
-    @Test
-    public void searchFieldTest() {
+        @DataProvider(name = "getUsers")
+        public Object[][] getUsers() {
+            return new Object[][]{{"Alex78", "123456", "MARIELKATA"}
+            };
+        }
+    @Test(dataProvider = "getUsers")
+    public void searchFieldTest(String user, String password, String name) {
         HomePage homePage = new HomePage(driver);
         homePage.navigateTo();
         Assert.assertTrue(homePage.isUrlLoaded(), "The Home page URL is not loaded");
@@ -59,12 +60,12 @@ public class ObjectsSearchFieldTest {
         Assert.assertTrue(loginPage.isUrlLoaded(), "The login URL is not correct");
         String signInText = loginPage.getSingInElementText();
         Assert.assertEquals(signInText, "Sign in" );
-        loginPage.fillUserName("Alex78");
-        loginPage.fillPassword("12345");
+        loginPage.fillUserName(user);
+        loginPage.fillPassword(password);
         loginPage.clickSignIn();
         Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
 
-        header.populateSearchField("MARIELKATA");
+        header.populateSearchField(name);
         header.clickUser();
 
          ProfilePage profilePage = new ProfilePage(driver);
