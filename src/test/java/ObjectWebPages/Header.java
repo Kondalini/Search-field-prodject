@@ -1,6 +1,7 @@
 package ObjectWebPages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,12 +32,14 @@ public class Header {
     }
 
     public void clickUser() {
-                WebElement userMarielkata = driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
+        WebElement userMarielkata = driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
+        wait.until(ExpectedConditions.visibilityOf(userMarielkata));
+        wait.ignoring(StaleElementReferenceException.class);
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(userMarielkata)));
+
         userMarielkata.click();
-
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
          wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
 
     }

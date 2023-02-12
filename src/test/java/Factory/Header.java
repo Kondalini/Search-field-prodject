@@ -1,5 +1,6 @@
 package Factory;
 
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -38,8 +39,13 @@ public class Header {
     }
 
     public void clickUser() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(userMarielkata)));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
+        wait.until(ExpectedConditions.visibilityOf(userMarielkata));
+        wait.ignoring(StaleElementReferenceException.class);
+
         userMarielkata.click();
-    }
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/user"));
+
+}
 }
