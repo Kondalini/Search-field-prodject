@@ -31,11 +31,11 @@ public class Header {
     }
 
     public void clickUser() {
-                WebElement UserMarielkata = driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
+                WebElement userMarielkata = driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(UserMarielkata)));
-        UserMarielkata.click();
+        wait.until(ExpectedConditions.refreshed(ExpectedConditions.visibilityOf(userMarielkata)));
+        userMarielkata.click();
 
          wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
 
