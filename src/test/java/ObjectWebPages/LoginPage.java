@@ -32,12 +32,12 @@ public class LoginPage {
 
     public void fillUserName(String user) {
         WebElement userNameField = driver.findElement(By.id("defaultLoginFormUsername"));
-        userNameField.sendKeys("Alex78");
+        userNameField.sendKeys(user);
     }
 
     public void fillPassword(String password) {
         WebElement passwordField = driver.findElement(By.id("defaultLoginFormPassword"));
-        passwordField.sendKeys("123456");
+        passwordField.sendKeys(password);
 
     }
 
@@ -47,9 +47,5 @@ public class LoginPage {
         wait.until(ExpectedConditions.elementToBeClickable(signInButton));
         signInButton.click();
     }
-
-
-
-
     }
 

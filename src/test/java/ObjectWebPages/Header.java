@@ -25,20 +25,20 @@ public class Header {
         wait.until(ExpectedConditions.elementToBeClickable(loginLink));
     }
 
-    public void populateSearchField(String text) {
+    public void populateSearchField(String name) {
 
         WebElement searchField = driver.findElement(By.id("search-bar"));
-        searchField.sendKeys("MARIELKATA");
+        searchField.sendKeys(name);
     }
 
     public void clickUser() {
-        WebElement userMarielkata = driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
+        WebElement userName= driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
-        wait.until(ExpectedConditions.visibilityOf(userMarielkata));
+        wait.until(ExpectedConditions.visibilityOf(userName));
         wait.ignoring(StaleElementReferenceException.class);
 
 
-        userMarielkata.click();
+        userName.click();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
          wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/32"));
 
