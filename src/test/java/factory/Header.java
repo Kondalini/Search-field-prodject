@@ -1,4 +1,4 @@
-package Factory;
+package factory;
 
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -18,8 +18,8 @@ public class Header {
     @FindBy(id = "search-bar")
     private WebElement searchField;
 
-    @FindBy(xpath = "//*[text() = 'MARIELKATA']")
-    private WebElement userMarielkata;
+    @FindBy(xpath = "//*[@id=\"navbarColor01\"]/form/div/app-search-dropdown/div/div[1]/app-small-user-profile/div/div[1]/a")
+    private WebElement userName;
 
     public Header(WebDriver driver) {
         this.driver = driver;
@@ -27,25 +27,25 @@ public class Header {
     }
 
     public void clickLogin() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/users/login"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
         wait.until(ExpectedConditions.elementToBeClickable(loginLink));
         loginLink.click();
     }
 
-    public void populateSearchField(String text) {
-        searchField.sendKeys("MARIELKATA");
+    public void populateSearchField(String name) {
+        searchField.sendKeys(name);
 
     }
 
     public void clickUser() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
-        wait.until(ExpectedConditions.visibilityOf(userMarielkata));
+        wait.until(ExpectedConditions.visibilityOf(userName));
         wait.ignoring(StaleElementReferenceException.class);
 
-        userMarielkata.click();
+        userName.click();
         wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(ExpectedConditions.urlToBe("http://training.skillo-bg.com:4300/user"));
+        wait.until(ExpectedConditions.urlContains("http://training.skillo-bg.com:4300/users"));
 
 }
 }

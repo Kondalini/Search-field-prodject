@@ -1,4 +1,4 @@
-package ObjectWebPages;
+package objectWebPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -32,13 +32,13 @@ public class Header {
     }
 
     public void clickUser()  {
-        WebElement userName= driver.findElement(By.xpath(" //*[text() = 'MARIELKATA']")); //*[text() = 'MARIELKATA']
+        WebElement userName= driver.findElement(By.xpath("//*[@id=\"navbarColor01\"]/form/div/app-search-dropdown/div/div[1]/app-small-user-profile/div/div[1]/a"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(35));
+        wait.until(ExpectedConditions.visibilityOf(userName));
         wait.ignoring(StaleElementReferenceException.class);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("MARIELKATA")));
-
         userName.click();
-              wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
          wait.until(ExpectedConditions.urlContains("http://training.skillo-bg.com:4300/users"));
 
     }

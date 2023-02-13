@@ -1,9 +1,10 @@
-package Tests;
+package tests;
 
-import ObjectWebPages.Header;
-import ObjectWebPages.HomePage;
-import ObjectWebPages.LoginPage;
-import ObjectWebPages.ProfilePage;
+
+import factory.Header;
+import factory.HomePage;
+import factory.LoginPage;
+import factory.ProfilePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,8 +13,8 @@ import org.testng.annotations.*;
 
 import java.time.Duration;
 
-public class ObjectsSearchFieldTest {
-    private  WebDriver driver;
+public class FactorySearchFieldTest {
+    private WebDriver driver;
 
     @BeforeSuite
     protected final void setupTestSuite() {
@@ -28,10 +29,7 @@ public class ObjectsSearchFieldTest {
         this.driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-        //void setup() {
-        //        driver = new ChromeDriver();
-        //        driver.manage().window().maximize();
-        //    }
+
     }
     @AfterMethod
     protected final void tearDownTest() {
@@ -39,16 +37,14 @@ public class ObjectsSearchFieldTest {
             this.driver.quit();
         }
     }
-        //void cleanUp() {
-        //driver.quit();
-        //}
-        @DataProvider(name = "getUsers")
-        public Object[][] getUsers() {
-            return new Object[][]{{"Alex78", "123456", "MARIELKATA"}
-            };
-        }
+    @DataProvider(name = "getUsers")
+    public Object[][] getUsers() {
+        return new Object[][]{{"Alex78", "123456", "Test"}
+        };
+    }
+
     @Test(dataProvider = "getUsers")
-    public void searchFieldTest(String user, String password, String name) throws InterruptedException {
+    public void searchFieldTest(String user, String password, String name) {
         HomePage homePage = new HomePage(driver);
         homePage.navigateTo();
         Assert.assertTrue(homePage.isUrlLoaded(), "The Home page URL is not loaded");
@@ -63,15 +59,15 @@ public class ObjectsSearchFieldTest {
         loginPage.fillUserName(user);
         loginPage.fillPassword(password);
         loginPage.clickSignIn();
-        Assert.assertTrue(loginPage.isUrlLoaded(), "The LoginPage URL is not correct");
+        Assert.assertTrue(homePage.isUrlLoaded(), "The Home URL is not correct!");
 
         header.populateSearchField(name);
         header.clickUser();
 
-         ProfilePage profilePage = new ProfilePage(driver);
-         String actualName = profilePage.getUsername();
-         Assert.assertEquals(actualName, "MARIELKATA", "The user name is incorrect");
+        ProfilePage profilePage = new ProfilePage(driver);
+        String actualName = profilePage.getUsername();
+        Assert.assertEquals(actualName, "TestUserUserUserUser", "The user name is incorrect");
 
     }
-    }
 
+}

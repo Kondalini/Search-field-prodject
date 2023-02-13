@@ -1,4 +1,4 @@
-package Factory;
+package factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,7 +14,7 @@ public class HomePage {
     }
     public boolean isUrlLoaded() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.urlToBe(ObjectWebPages.HomePage.PAGE_URL));
+        return wait.until(ExpectedConditions.urlToBe(HomePage.PAGE_URL));
 
     }
     public void navigateTo() {

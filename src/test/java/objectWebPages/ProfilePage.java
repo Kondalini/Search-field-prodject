@@ -1,4 +1,4 @@
-package ObjectWebPages;
+package objectWebPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class ProfilePage {
-    public static final String PAGE_URL = "http://training.skillo-bg.com:4200/users/";
+    public static final String PAGE_URL = "http://training.skillo-bg.com:4300/users/";
      private final WebDriver driver;
 
 
