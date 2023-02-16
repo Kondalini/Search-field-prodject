@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="" />
+    <list default="true" id="50618dd9-9dc9-4b4d-b5a8-33c660f0ad22" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Header.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +56,7 @@
       <recent name="C:\Users\Public\skillo-my-prodject\Search-field-prodject\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FactorySearchFieldTest">
+  <component name="RunManager" selected="TestNG.ObjectsSearchFieldTest">
     <configuration name="FactorySearchFieldTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Search-field-prodject" />
       <extension name="coverage">
@@ -126,10 +129,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ObjectsSearchFieldTest" />
         <item itemvalue="TestNG.FactorySearchFieldTest" />
         <item itemvalue="TestNG.FactorySearchFieldTest.searchFieldTest" />
         <item itemvalue="TestNG.ObjectsSearchFieldTest.searchFieldTest" />
-        <item itemvalue="TestNG.ObjectsSearchFieldTest" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676317355413</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="packages, contains Page classes have been removed to scr/main/java">
+      <created>1676317802963</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1676317802963</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,6 +349,7 @@
     <MESSAGE value="forth commit update" />
     <MESSAGE value="next commit" />
     <MESSAGE value="the follow changes are made:&#10;- FactorySearchFieldTest imports are corrected&#10;- @dataProvider has been applied on both tests&#10;- duplicative Assert has been removed&#10;- package names have been amended" />
-    <option name="LAST_COMMIT_MESSAGE" value="the follow changes are made:&#10;- FactorySearchFieldTest imports are corrected&#10;- @dataProvider has been applied on both tests&#10;- duplicative Assert has been removed&#10;- package names have been amended" />
+    <MESSAGE value="packages, contains Page classes have been removed to scr/main/java" />
+    <option name="LAST_COMMIT_MESSAGE" value="packages, contains Page classes have been removed to scr/main/java" />
   </component>
 </project>
